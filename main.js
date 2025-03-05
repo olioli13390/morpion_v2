@@ -12,6 +12,8 @@ let currentPlayer = 0
 let vsComputer = false
 
 function createmap(map) {
+    const versusPlayer = document.querySelector('#vsPlayer')
+    versusPlayer.classList.add('selected')
     const announce = document.createElement('h2')
     announce.id = 'announce'
     game.appendChild(announce)
